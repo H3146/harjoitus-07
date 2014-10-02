@@ -1,0 +1,24 @@
+//HARJOITUS 7 JANI TUOMAALA
+
+#include <iostream>
+using namespace std;
+void main()
+
+{
+	int lompsa;
+	int hinta = 5;
+
+	cout << "\nPaljon € lompakossa? ";
+		cin >> lompsa;
+		
+		if (lompsa >= hinta) //Jos lompsa on suurempi tai yhtäsuuri kuin hinta, suoritetaan laskutoimitus jossa saadaan selville paljon lompakkoon jää rahaa ostoksen jälkeen.
+		{
+				lompsa = lompsa - hinta;
+				cout << "\nLompsaan jaa " << lompsa;
+				cout << "Ostit piirakan\n";
+		}
+		else 
+		{
+			cout << "\nParempi paastota.\n";
+		}
+}
